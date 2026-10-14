@@ -64,11 +64,43 @@
     ],
     "hackernews": {
       "enabled": true,
-      "fetch_top_stories": 30,
-      "min_score": 150,
+      "fetch_top_stories": 50,
+      "min_score": 100,
+      "category": "hackernews",
       "profile": "tech-news"
     },
     "rss": [
+      {
+        "name": "The Verge",
+        "url": "https://www.theverge.com/rss/index.xml",
+        "enabled": true,
+        "category": "tech-media",
+        "profile": "tech-news"
+      },
+      {
+        "name": "少数派",
+        "url": "https://sspai.com/feed",
+        "enabled": true,
+        "category": "sspai",
+        "profile": "tech-news",
+        "content_extractor": "trafilatura"
+      },
+      {
+        "name": "虎嗅",
+        "url": "https://rss.huxiu.com/",
+        "enabled": true,
+        "category": "huxiu",
+        "profile": ["tech-news", "finance-news"],
+        "content_extractor": "trafilatura"
+      },
+      {
+        "name": "36氪 24小时热榜",
+        "url": "https://rsshub.ktachibana.party/36kr/hot-list",
+        "enabled": true,
+        "category": "36kr",
+        "profile": ["tech-news", "finance-news"],
+        "content_extractor": "trafilatura"
+      },
       {
         "name": "Simon Willison",
         "url": "https://simonwillison.net/atom/everything/",
@@ -85,40 +117,10 @@
         "content_extractor": "trafilatura"
       },
       {
-        "name": "Sean Goedecke",
-        "url": "https://www.seangoedecke.com/rss.xml",
-        "enabled": true,
-        "category": "software-engineering",
-        "profile": "tech-blog",
-        "content_extractor": "trafilatura"
-      },
-      {
-        "name": "CNBC Finance",
-        "url": "https://search.cnbc.com/rs/search/combinedcms/view.xml?partnerId=wrss01&id=10000664",
-        "enabled": true,
-        "category": "finance",
-        "profile": "finance-news",
-        "content_extractor": "trafilatura"
-      },
-      {
-        "name": "GitHub Trending - Daily",
-        "url": "https://mshibanami.github.io/GitHubTrendingRSS/daily/all.xml",
-        "enabled": true,
-        "category": "github-trending",
-        "profile": "tech-news"
-      },
-      {
         "name": "Semianalysis",
         "url": "https://newsletter.semianalysis.com/feed",
         "enabled": true,
         "category": "semiconductors",
-        "profile": "tech-news"
-      },
-      {
-        "name": "LWN.net",
-        "url": "https://lwn.net/headlines/full_text?key=${LWN_KEY}",
-        "enabled": false,
-        "category": "linux-kernel",
         "profile": "tech-news"
       }
     ],
@@ -147,6 +149,18 @@
       "users": [],
       "fetch_comments": 10
     },
+    "twitter": {
+      "enabled": false,
+      "mode": "apify",
+      "users": ["dotey"],
+      "keywords": [],
+      "fetch_limit": 20,
+      "fetch_reply_text": false,
+      "actor_id": "altimis~scweet",
+      "apify_token_env": "APIFY_TOKEN",
+      "category": "ai-x",
+      "profile": "tech-news"
+    },
     "telegram": {
       "enabled": true,
       "channels": [
@@ -163,7 +177,7 @@
     "time_window_hours": 24
   },
   "digest": {
-    "max_items": null,
+    "max_items": 25,
     "profile_order": [
       "tech-news",
       "tech-blog",
