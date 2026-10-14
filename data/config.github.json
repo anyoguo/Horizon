@@ -86,20 +86,6 @@
         "content_extractor": "trafilatura"
       },
       {
-        "name": "虎嗅",
-        "url": "https://rss.huxiu.com/",
-        "enabled": true,
-        "category": "huxiu",
-        "profile": ["tech-news", "finance-news"]
-      },
-      {
-        "name": "36氪 24小时热榜",
-        "url": "https://rsshub.ktachibana.party/36kr/hot-list",
-        "enabled": true,
-        "category": "36kr",
-        "profile": ["tech-news", "finance-news"]
-      },
-      {
         "name": "宝玉的博客",
         "url": "https://baoyu.io/feed.xml",
         "enabled": true,
