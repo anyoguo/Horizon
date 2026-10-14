@@ -90,16 +90,14 @@
         "url": "https://rss.huxiu.com/",
         "enabled": true,
         "category": "huxiu",
-        "profile": ["tech-news", "finance-news"],
-        "content_extractor": "trafilatura"
+        "profile": ["tech-news", "finance-news"]
       },
       {
         "name": "36氪 24小时热榜",
         "url": "https://rsshub.ktachibana.party/36kr/hot-list",
         "enabled": true,
         "category": "36kr",
-        "profile": ["tech-news", "finance-news"],
-        "content_extractor": "trafilatura"
+        "profile": ["tech-news", "finance-news"]
       },
       {
         "name": "宝玉的博客",
