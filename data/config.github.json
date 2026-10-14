@@ -102,6 +102,14 @@
         "content_extractor": "trafilatura"
       },
       {
+        "name": "宝玉的博客",
+        "url": "https://baoyu.io/feed.xml",
+        "enabled": true,
+        "category": "baoyu",
+        "profile": ["tech-news", "tech-blog"],
+        "content_extractor": "trafilatura"
+      },
+      {
         "name": "Simon Willison",
         "url": "https://simonwillison.net/atom/everything/",
         "enabled": true,
@@ -148,18 +156,6 @@
       ],
       "users": [],
       "fetch_comments": 10
-    },
-    "twitter": {
-      "enabled": false,
-      "mode": "apify",
-      "users": ["dotey"],
-      "keywords": [],
-      "fetch_limit": 20,
-      "fetch_reply_text": false,
-      "actor_id": "altimis~scweet",
-      "apify_token_env": "APIFY_TOKEN",
-      "category": "ai-x",
-      "profile": "tech-news"
     },
     "telegram": {
       "enabled": true,
